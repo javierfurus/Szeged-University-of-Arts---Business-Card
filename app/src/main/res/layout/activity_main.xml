@@ -213,16 +213,7 @@
         android:fontFamily="sans-serif"
         android:autoLink="phone"
         />
-    <TextView
-        android:id="@+id/separator2"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_below="@id/fourthitem"
-        android:background="@color/udacityDark"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_marginRight="@dimen/activity_main_text_margin_right"
-        android:layout_marginTop="@dimen/activity_main_text_padding_bottom"
-        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="35dp"
