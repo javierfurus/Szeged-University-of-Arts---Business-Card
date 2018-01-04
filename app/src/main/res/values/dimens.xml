@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_main_text_size">36sp</dimen>
+    <dimen name="activity_list_text_size">18sp</dimen>
+    <dimen name="activity_main_text_padding">95dp</dimen>
+    <dimen name="activity_main_text_padding_bottom">12.5dp</dimen>
+    <dimen name="activity_main_icon_margin_left">65dp</dimen>
+    <dimen name="activity_main_left_text_margin_left">10dp</dimen>
+    <dimen name="activity_main_text_margin_right">10dp</dimen>
+    <dimen name="activity_main_padding_top">12.5dp</dimen>
+    <dimen name="icon_font_distance">5dp</dimen>
+    <dimen name="logo_font_size">16sp</dimen>
+    <dimen name="logotextpadding">30sp</dimen>
+    <dimen name="listerwidth">60dp</dimen>
+
+</resources>
