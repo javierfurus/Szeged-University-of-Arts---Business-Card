@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">HelloAndroid</string>
     <string name="bottom_text">Don\'t hesitate - Join us now!</string>
-    <string name="logotext1">You are the cannonball</string>
-    <string name="logotext2">We are the cannon</string>
+    <string name="logotext1">You are the canonball</string>
+    <string name="logotext2">We are the canon</string>
     <string name="logotext3">Break those obstacles ahead\nof you!</string>
     <string name="motivation">Would you like to know more about Udacity and how you can apply? Feel free to contact us and check our courses on our website!</string>
     <string name="name">Name:</string>
