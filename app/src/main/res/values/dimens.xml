@@ -13,5 +13,13 @@
     <dimen name="logo_font_size">16sp</dimen>
     <dimen name="logotextpadding">30sp</dimen>
     <dimen name="listerwidth">60dp</dimen>
+    <dimen name="logowidth">40dp</dimen>
+    <dimen name="logoContrastWidth">35dp</dimen>
+    <dimen name="bannerHeight">200dp</dimen>
+    <dimen name="logoHeight">100dp</dimen>
+    <dimen name="iconSize">25dp</dimen>
+    <dimen name="bottomBannerSize">30dp</dimen>
+    <dimen name="bottomBannerContrast">5dp</dimen>
+    <dimen name="separatorSize">0.5dp</dimen>
 
 </resources>

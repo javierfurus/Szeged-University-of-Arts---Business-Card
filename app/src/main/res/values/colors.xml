@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#313d47</color>
-    <color name="colorPrimaryDark">#313d47</color>
+    <color name="colorPrimary">#000065</color>
+    <color name="colorPrimaryDark">#00004d</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="udacityDark">#313d47</color>
-    <color name="udacityLight">#596f81</color>
+    <color name="udacityDark">#00004d</color>
+    <color name="udacityLight">#000065</color>
+    <color name="logoBackground">#1a237e</color>
 </resources>

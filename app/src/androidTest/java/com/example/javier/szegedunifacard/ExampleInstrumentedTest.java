@@ -1,4 +1,4 @@
-package com.example.javier.helloandroid;
+package com.example.javier.szegedunifacard;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

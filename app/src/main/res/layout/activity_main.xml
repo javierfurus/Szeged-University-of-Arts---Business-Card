@@ -1,235 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.javier.helloandroid.MainActivity">
-
-
-    <ImageView
-        android:id="@+id/logo"
+    tools:context="com.example.javier.szegedunifacard.MainActivity">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:scaleType="fitCenter"
-        android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
-        android:src="@drawable/udacity" />
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
 
-    <TextView
-        android:id="@+id/you"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_marginTop="@dimen/logotextpadding"
-        android:fontFamily="sans-serif"
-        android:text="@string/logotext1"
-        android:textColor="@color/udacityDark"
-        android:textSize="@dimen/logo_font_size"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/we"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_below="@+id/you"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/logotext2"
-        android:textSize="@dimen/logo_font_size"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:textColor="@color/udacityDark"/>
-    <TextView
-        android:id="@+id/us"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_below="@+id/we"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/logotext3"
-        android:textSize="@dimen/logo_font_size"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:textColor="@color/udacityDark"/>
-    <ImageView
-        android:id="@+id/iconname"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/separator"
-        android:scaleType="fitCenter"
-        android:src="@drawable/smartphonehead"
-        android:layout_marginTop="@dimen/activity_main_padding_top"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"/>
-    <ImageView
-        android:id="@+id/iconwebsite"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/seconditem"
-        android:scaleType="fitCenter"
-        android:src="@drawable/worldwide"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_marginTop="@dimen/activity_main_padding_top"/>
-    <ImageView
-        android:id="@+id/iconlocation"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/firstitem"
-        android:scaleType="fitCenter"
-        android:src="@drawable/location"
-        android:layout_marginTop="@dimen/activity_main_padding_top"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        />
-    <ImageView
-        android:id="@+id/iconphone"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/thirditem"
-        android:scaleType="fitCenter"
-        android:src="@drawable/smartphonehand"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_marginTop="@dimen/activity_main_padding_top"/>
-    <TextView
-        android:id="@+id/name"
-        android:layout_below="@+id/separator"
-        android:layout_toRightOf="@id/iconname"
-        android:layout_width="@dimen/listerwidth"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:text="@string/name"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"/>
-    <TextView
-        android:id="@+id/location"
-        android:layout_below="@+id/firstitem"
-        android:layout_toRightOf="@id/iconlocation"
-        android:layout_width="@dimen/listerwidth"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:text="@string/address"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"/>
-    <TextView
-        android:id="@+id/website"
-        android:layout_below="@+id/seconditem"
-        android:layout_toRightOf="@id/iconwebsite"
-        android:layout_width="@dimen/listerwidth"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:text="@string/web"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"/>
-    <TextView
-        android:id="@+id/phone"
-        android:layout_below="@+id/thirditem"
-        android:layout_toRightOf="@+id/iconphone"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:text="@string/phone"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"/>
-    <TextView
-        android:id="@+id/motivation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logo"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_marginRight="@dimen/activity_main_text_margin_right"
-        android:fontFamily="sans-serif"
-        android:text="@string/motivation"
-        android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
-        />
-    <TextView
-        android:id="@+id/separator"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_below="@id/motivation"
-        android:background="@color/udacityDark"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_marginRight="@dimen/activity_main_text_margin_right"
-        android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bannerHeight"
+                    android:layout_marginBottom="@dimen/activity_main_text_padding_bottom">
 
-    <TextView
-        android:id="@+id/firstitem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/separator"
-        android:layout_toRightOf="@+id/name"
-        android:layout_marginRight="@dimen/activity_main_text_margin_right"
-        android:fontFamily="sans-serif"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:text="@string/namecontent"
-        android:textSize="@dimen/activity_list_text_size" />
-    <TextView
-        android:id="@+id/seconditem"
-        android:textSize="@dimen/activity_list_text_size"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_marginRight="@dimen/activity_main_text_margin_right"
-        android:layout_below="@id/firstitem"
-        android:layout_toRightOf="@id/location"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/addresscontent"
-        android:fontFamily="sans-serif"
-        android:autoLink="map"/>
-    <TextView
-        android:id="@+id/thirditem"
-        android:layout_below="@+id/seconditem"
-        android:layout_toRightOf="@id/website"
-        android:textSize="@dimen/activity_list_text_size"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/websitecontent"
-        android:autoLink="web"
-        android:fontFamily="sans-serif" />
-    <TextView
-        android:id="@+id/fourthitem"
-        android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
-        android:layout_below="@+id/thirditem"
-        android:layout_toRightOf="@+id/phone"
-        android:textSize="@dimen/activity_list_text_size"
-        android:paddingBottom="@dimen/activity_main_text_padding_bottom"
-        android:paddingTop="@dimen/activity_main_padding_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/phonecontent"
-        android:fontFamily="sans-serif"
-        android:autoLink="phone"
-        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/logoBackground" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/udacityLight"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_alignParentBottom="true"
-        android:text="@string/bottom_text"
-        android:textSize="@dimen/activity_list_text_size"
-        android:gravity="center"
-        android:background="@color/udacityDark"
-        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:layout_width="@dimen/logowidth"
+                        android:layout_height="match_parent"
+                        android:background="@color/udacityLight" />
+
+                    <TextView
+                        android:layout_width="@dimen/logoContrastWidth"
+                        android:layout_height="match_parent"
+                        android:background="@color/udacityDark" />
+
+                    <TextView
+                        android:layout_width="@dimen/logowidth"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/udacityLight" />
+
+                    <TextView
+                        android:layout_width="@dimen/logoContrastWidth"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/udacityDark" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/logoHeight"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/uninewlogo" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/motivation" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/separatorSize"
+                            android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:background="@color/udacityDark" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/iconSize"
+                            android:layout_height="@dimen/iconSize"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginTop="@dimen/activity_main_padding_top"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/smartphonehead" />
 
 
+                        <TextView
+                            android:layout_width="@dimen/listerwidth"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/name"
+                            android:textStyle="bold" />
 
-</android.widget.RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/namecontent"
+                            android:textSize="@dimen/activity_list_text_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/iconSize"
+                            android:layout_height="@dimen/iconSize"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginTop="@dimen/activity_main_padding_top"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/location" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/listerwidth"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/address"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:autoLink="map"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/addresscontent"
+                            android:textSize="@dimen/activity_list_text_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/iconSize"
+                            android:layout_height="@dimen/iconSize"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginTop="@dimen/activity_main_padding_top"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/worldwide" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/listerwidth"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/web"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/websitecontent"
+                            android:autoLink="web"
+                            android:textSize="@dimen/activity_list_text_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/iconSize"
+                            android:layout_height="@dimen/iconSize"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginTop="@dimen/activity_main_padding_top"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/smartphonehand" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/listerwidth"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/phone"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/phonecontent"
+                            android:textSize="@dimen/activity_list_text_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/iconSize"
+                            android:layout_height="@dimen/iconSize"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginTop="@dimen/activity_main_padding_top"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/letter" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/listerwidth"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/mail"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
+                            android:paddingTop="@dimen/activity_main_padding_top"
+                            android:text="@string/mailcontent"
+                            android:autoLink="email"
+                            android:textSize="@dimen/activity_list_text_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/separatorSize"
+                            android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:background="@color/udacityDark"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
+                            android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
+                            android:layout_marginRight="@dimen/activity_main_text_margin_right"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/moreinfo" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottomBannerContrast"
+                    android:background="@color/udacityLight" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottomBannerSize"
+                    android:background="@color/udacityDark"
+                    android:gravity="center"
+                    android:text="@string/bottom_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/activity_list_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

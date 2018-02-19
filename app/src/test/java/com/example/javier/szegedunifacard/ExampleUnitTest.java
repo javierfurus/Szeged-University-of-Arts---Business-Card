@@ -1,4 +1,4 @@
-package com.example.javier.helloandroid;
+package com.example.javier.szegedunifacard;
 
 import org.junit.Test;
 

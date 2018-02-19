@@ -1,4 +1,4 @@
-package com.example.javier.helloandroid;
+package com.example.javier.szegedunifacard;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

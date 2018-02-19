@@ -1,16 +1,22 @@
 <resources>
-    <string name="app_name">HelloAndroid</string>
+    <string name="app_name">University of Szeged -Faculty of Arts</string>
     <string name="bottom_text">Don\'t hesitate - Join us now!</string>
-    <string name="logotext1">You are the cannonball</string>
-    <string name="logotext2">We are the cannon</string>
-    <string name="logotext3">Break those obstacles ahead\nof you!</string>
-    <string name="motivation">Would you like to know more about Udacity and how you can apply? Feel free to contact us and check our courses on our website!</string>
+    <string name="motivation">The Faculty of Arts in Szeged is one of the most prominent institutes offering training in the humanities and social sciences in Hungary. </string>
     <string name="name">Name:</string>
-    <string name="namecontent">Udacity</string>
+    <string name="namecontent">University of Szeged - Faculty of Arts</string>
     <string name="address">Address:</string>
-    <string name="addresscontent">2465 Latham St, Mountain View\nCA 94043</string>
+    <string name="addresscontent">2. Egyetem u., Szeged 6722</string>
     <string name="web">Website:</string>
-    <string name="websitecontent">http://www.udacity.com</string>
+    <string name="websitecontent">http://www.arts.u-szeged.hu/english</string>
     <string name="phone">Phone:</string>
-    <string name="phonecontent">650-555-5555</string>
+    <string name="phonecontent">(+36-62) 544-281</string>
+    <string name="moreinfo"><b>Want to know more?</b>
+        \n
+        \nFeel free to call us and ask!
+        \n
+        \n<b>Dr. Zoltán Vajda</b>, Vice Dean for International Affairs
+        \n<b>Ágnes Bata</b>, Faculty Coordinator for International Affairs
+        \n<b>Júlia Gyöngyösi</b>, Assistant for International Affairs</string>
+    <string name="mail">Mail:</string>
+    <string name="mailcontent">international@primus.arts.u-szeged.hu</string>
 </resources>
