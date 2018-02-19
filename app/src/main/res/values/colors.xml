@@ -3,7 +3,7 @@
     <color name="colorPrimary">#000065</color>
     <color name="colorPrimaryDark">#00004d</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="udacityDark">#00004d</color>
-    <color name="udacityLight">#000065</color>
+    <color name="uniDark">#00004d</color>
+    <color name="uniLight">#000065</color>
     <color name="logoBackground">#1a237e</color>
 </resources>

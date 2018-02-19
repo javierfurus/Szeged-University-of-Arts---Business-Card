@@ -26,24 +26,24 @@
                     <TextView
                         android:layout_width="@dimen/logowidth"
                         android:layout_height="match_parent"
-                        android:background="@color/udacityLight" />
+                        android:background="@color/uniLight" />
 
                     <TextView
                         android:layout_width="@dimen/logoContrastWidth"
                         android:layout_height="match_parent"
-                        android:background="@color/udacityDark" />
+                        android:background="@color/uniDark" />
 
                     <TextView
                         android:layout_width="@dimen/logowidth"
                         android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
-                        android:background="@color/udacityLight" />
+                        android:background="@color/uniLight" />
 
                     <TextView
                         android:layout_width="@dimen/logoContrastWidth"
                         android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
-                        android:background="@color/udacityDark" />
+                        android:background="@color/uniDark" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
                             android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
                             android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
                             android:layout_marginRight="@dimen/activity_main_text_margin_right"
-                            android:background="@color/udacityDark" />
+                            android:background="@color/uniDark" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -265,7 +265,7 @@
                             android:layout_marginBottom="@dimen/activity_main_text_padding_bottom"
                             android:layout_marginLeft="@dimen/activity_main_left_text_margin_left"
                             android:layout_marginRight="@dimen/activity_main_text_margin_right"
-                            android:background="@color/udacityDark"
+                            android:background="@color/uniDark"
                             tools:ignore="Suspicious0dp" />
                         <TextView
                             android:layout_width="wrap_content"
@@ -287,12 +287,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/bottomBannerContrast"
-                    android:background="@color/udacityLight" />
+                    android:background="@color/uniLight" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/bottomBannerSize"
-                    android:background="@color/udacityDark"
+                    android:background="@color/uniDark"
                     android:gravity="center"
                     android:text="@string/bottom_text"
                     android:textColor="@android:color/white"
